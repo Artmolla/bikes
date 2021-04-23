@@ -1,4 +1,26 @@
 .about {
   text-align: center;
-  padding: 150px 137px;
+  padding: 126px 9.5%;
+
+  @media (max-width: $desktop-width) {
+    padding: 15px 11.7%;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 15px 3%;
+  }
+}
+
+.about h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  margin-bottom: 50px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 41px;
+    margin-bottom: 30px;
+  }
 }
