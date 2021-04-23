@@ -1,3 +1,10 @@
-h1 {
-  color: red;
-}
+@import "font.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "global.scss";
+@import "page.scss";
+@import "header.scss";
+@import "menu.scss";
+@import "contact-form.scss";
+@import "about.scss";
+@import "contacts.scss";

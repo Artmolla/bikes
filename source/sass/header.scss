@@ -1,0 +1,104 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 256px 23%;
+  padding: 0 19.46% 221px 19.46%;
+  color: $dark-white;
+  background-color: $black;
+  background-image: url("../img/backgrounds/bg-black-bike.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  @media (max-width: 1350px) {
+    gap: 200px 8%;
+  }
+
+  @media (max-width: $desktop-width) {
+    grid-template-columns: 1fr;
+    padding: 0;
+    background-size: contain;
+    background-position-y: -50px;
+    gap: 27px 0;
+  }
+
+  @media (max-width: 640px) {
+    background-position: unset;
+  }
+
+  @media (max-width: 550px) {
+    background-image: url("../img/backgrounds/bg-black-bike-mobile.jpg");
+  }
+
+  @media (min-resolution: 1.5dppx) and (max-width: $desktop-width) {
+    background-image: url("../img/backgrounds/bg-black-bike@2x.jpg");
+  }
+
+  @media (min-resolution: 1.5dppx) and (max-width: $tablet-width) {
+    background-image: url("../img/backgrounds/bg-black-bike-mobile@2x.jpg");
+  }
+}
+
+.header__intro {
+  min-width: 350px;
+
+  @media (max-width: 1100px) {
+    min-width: 300px;
+  }
+
+  @media (max-width: $desktop-width) {
+    @include flex;
+
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 2.9% 35px 2.9%;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 25px 3% 25px 3%;
+  }
+}
+
+.header__logo {
+  @media (max-width: $desktop-width) {
+    align-self: flex-start;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 2.3%;
+  }
+}
+
+.header__intro h1 {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+  margin: 24px 0;
+
+  @media (max-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+    margin: 83px 0 2px 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 69px 0 2px 0;
+  }
+}
+
+.header__intro p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 18px;
+    padding: 0 20%;
+    text-align: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+  }
+}
