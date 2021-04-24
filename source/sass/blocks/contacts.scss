@@ -1,3 +1,47 @@
 .contacts {
   text-align: center;
 }
+
+.contacts__map {
+  width: 100%;
+  margin-bottom: 36px;
+
+  @media (max-width: $desktop-width) {
+    max-height: 545px;
+  }
+}
+
+.contacts__map img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.contacts__list {
+  @include flex;
+
+  justify-content: center;
+}
+
+.contacts__item {
+  margin-right: 90px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+    flex-basis: 100%;
+  }
+}
+
+.contacts__action {
+  @include flex;
+
+  align-items: center;
+
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+  }
+}
