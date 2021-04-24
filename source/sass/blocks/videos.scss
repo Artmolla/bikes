@@ -1,0 +1,91 @@
+.videos {
+  text-align: center;
+  color: $white;
+  background-image: linear-gradient(to bottom, $cursed-black 76.3%, $white 76.3%);
+  padding: 120px 17.74%;
+
+  @media (max-width: $desktop-width) {
+    padding: 70px 17.34%;
+    background-image: linear-gradient(to bottom, $cursed-black 72.7%, $white 72.7%);
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 83px 4.8% 70px 4.8%;
+    background-image: linear-gradient(to bottom, $cursed-black 76.4%, $white 76.4%);
+  }
+}
+
+.videos h2 {
+  margin: 0 0 20px 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+
+  @media (max-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.videos p {
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  padding: 0 28%;
+  opacity: 0.7;
+  margin-bottom: 56px;
+
+  @media (max-width: $desktop-width) {
+    padding: 0 7%;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 54px;
+  }
+}
+
+.videos__container {
+  position: relative;
+  width: 100%;
+}
+
+.videos__container img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.videos__button {
+  @include flex-center;
+
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: $aquamarine;
+
+  @media (max-width: $desktop-width) {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.videos__icon {
+  @media (max-width: $desktop-width) {
+    width: 25px;
+    height: 25px;
+  }
+}
