@@ -58,6 +58,14 @@
 }
 
 .menu__action {
+  &:hover {
+    color: $aquamarine;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
   @media (max-width: $desktop-width) {
     @include flex;
 

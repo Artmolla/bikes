@@ -175,3 +175,9 @@
   letter-spacing: -0.5px;
   padding: 15px 0;
 }
+
+
+.bicycles-types__item a:hover img {
+  filter: brightness(0.7);
+  transition: filter 0.5s;
+}

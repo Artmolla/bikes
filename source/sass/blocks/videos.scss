@@ -72,6 +72,11 @@
   border-radius: 50%;
   background-color: $aquamarine;
 
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.3);
+    transition: transform 0.2s;
+  }
+
   @media (max-width: $desktop-width) {
     width: 90px;
     height: 90px;

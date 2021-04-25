@@ -44,3 +44,13 @@
     padding: 0 10%;
   }
 }
+
+.footer a {
+  &:hover {
+    color: $aquamarine;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}

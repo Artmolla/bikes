@@ -69,6 +69,14 @@
   padding: 11px 8.5%;
   background-color: $white;
 
+  &:hover {
+    border: 1px solid $aquamarine;
+  }
+
+  &:focus {
+    border: 1px solid $aquamarine;
+  }
+
   @media (max-width: $desktop-width) {
     padding: 11px 6.3%;
   }
@@ -91,6 +99,15 @@
   cursor: pointer;
   padding: 15px 8.5%;
   background-color: $aquamarine;
+
+  &:hover {
+    color: $light-white;
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 
   @media (max-width: $tablet-width) {
     padding: 12px 8.5% 17px 8.5%;
