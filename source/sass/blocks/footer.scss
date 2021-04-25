@@ -1,8 +1,12 @@
 .footer {
-  padding: 5px 16.8%;
+  padding: 5px 16.8% 94px 16.8%;
 
   @media (max-width: $desktop-width) {
-    padding: 0 4.6%;
+    padding: 0 4.6% 50px 4.6%;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 0 27px 0;
   }
 }
 
@@ -34,5 +38,9 @@
   @media (max-width: $desktop-width) {
     padding: 0;
     margin-bottom: 20px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 10%;
   }
 }

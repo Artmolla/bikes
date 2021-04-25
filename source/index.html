@@ -5,7 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="Купить велосипед, велосипед, велосипед мечты">
+  <meta name="description" content="Интернет магазин велосипедов, подобрать лучший велосипед онлайн">
   <title>Велосипеды</title>
+  <link rel="preload" href="fonts/open-sans-light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/open-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/open-sans-semi-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/open-sans-bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -64,9 +70,10 @@
         </div>
         <div class="contact-form__container">
           <label class="visually-hidden" for="user-phone">Введите Ваш номер телефона</label>
-          <input id="user-phone" type="tel" name="phone" placeholder="Введите Ваш номер телефона" required>
+          <input id="user-phone" type="tel" name="phone" placeholder="Введите Ваш номер телефона"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
         </div>
-        <button type="button">
+        <button type="submit">
           Подобрать велосипед мечты
         </button>
       </form>
@@ -169,7 +176,7 @@
       <ul class="contacts__list list-reset">
         <li class="contacts__item">
           <a class="contacts__action link-reset" href="mailto:puteshestviemechta@gmail.ru">
-            <svg width="26" height="20">
+            <svg class="contacts__list__icon" width="26" height="20">
               <use xlink:href="img/sprite.svg#icon-envelop"></use>
             </svg>
             puteshestviemechta@gmail.ru
@@ -177,7 +184,7 @@
         </li>
         <li class="contacts__item">
           <a class="contacts__action link-reset" href="tel:+749978468446">
-            <svg width="22" height="24">
+            <svg class="contacts__list__icon" width="22" height="24">
               <use xlink:href="img/sprite.svg#icon-phone"></use>
             </svg>
             +7 (499) -784-684-46
