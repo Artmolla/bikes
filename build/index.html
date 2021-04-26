@@ -66,11 +66,11 @@
       <form action="https://echo.htmlacademy.ru" method="POST">
         <div class="contact-form__container">
           <label class="visually-hidden" for="user-name">Введите Ваше Имя</label>
-          <input id="user-name" type="text" name="name" placeholder="Введите Ваше Имя" required="">
+          <input id="user-name" type="text" name="name" placeholder="Введите Ваше Имя" pattern="[A-Za-z]" required="">
         </div>
         <div class="contact-form__container">
           <label class="visually-hidden" for="user-phone">Введите Ваш номер телефона</label>
-          <input id="user-phone" type="tel" name="phone" placeholder="Введите Ваш номер телефона" pattern="[+]{0,1}[378]{1}[0-9]{11}" required="">
+          <input id="user-phone" type="tel" name="phone" placeholder="Введите Ваш номер телефона" pattern="[+]{0,1}[378]{1}[0-9]{11}" title="В формате +71234567890" required="">
         </div>
         <button type="submit">
           Подобрать велосипед мечты
