@@ -30,6 +30,10 @@
     background-image: url("../img/backgrounds/bg-black-bike-mobile.jpg");
   }
 
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/backgrounds/bg-black-bike@2x.jpg");
+  }
+
   @media (min-resolution: 1.5dppx) and (max-width: $desktop-width) {
     background-image: url("../img/backgrounds/bg-black-bike@2x.jpg");
   }
