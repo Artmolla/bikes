@@ -4,7 +4,7 @@
   font-size: 17px;
   line-height: 28px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width) {
     @include flex;
 
     flex-direction: column;
@@ -14,13 +14,13 @@
     background-color: $white;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     padding: 67px 5% 35px;
   }
 }
 
 .contact-form form {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     width: 100%;
   }
 }
@@ -29,11 +29,11 @@
   width: 100%;
   margin-bottom: 20px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width) {
     min-width: 321px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     min-width: unset;
   }
 }
@@ -42,7 +42,7 @@
   text-align: center;
   margin: 3px 0 21px 0;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width) {
     padding: 0 27%;
     margin-bottom: 30px;
     font-size: 18px;
@@ -51,7 +51,7 @@
     letter-spacing: -0.005em;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     padding: 0;
     margin-bottom: 20px;
   }
@@ -77,11 +77,11 @@
     border: 1px solid $aquamarine;
   }
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width) {
     padding: 11px 6.3%;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     padding: 11px 8.5%;
   }
 }
@@ -109,7 +109,7 @@
     opacity: 0.4;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     padding: 12px 8.5% 17px 8.5%;
   }
 }

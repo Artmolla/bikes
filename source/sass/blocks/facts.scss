@@ -7,12 +7,12 @@
 .facts__item {
   flex-basis: 22.54%;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width) {
     flex-basis: 50%;
     margin-bottom: 22px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     flex-basis: 100%;
   }
 }
@@ -31,11 +31,11 @@
   letter-spacing: -0.5px;
   margin-top: 14px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width) {
     padding: 0 6%;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     font-size: 18px;
     margin-top: 13px;
   }
