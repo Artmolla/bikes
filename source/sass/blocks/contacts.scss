@@ -14,35 +14,35 @@
   @media (max-width: $mobile-width) {
     margin-bottom: 26px;
   }
-}
 
-.contacts__map img {
-  max-width: 100%;
-  object-fit: cover;
-  height: 530px;
+  img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 530px;
 
-  @media (max-width: $tablet-width) {
-    height: 545px;
+    @media (max-width: $tablet-width) {
+      height: 545px;
+    }
+
+    @media (max-width: $mobile-width) {
+      height: 250px;
+    }
   }
 
-  @media (max-width: $mobile-width) {
-    height: 250px;
-  }
-}
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 530px;
 
-.contacts__map iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 530px;
+    @media (max-width: $tablet-width) {
+      height: 545px;
+    }
 
-  @media (max-width: $tablet-width) {
-    height: 545px;
-  }
-
-  @media (max-width: $mobile-width) {
-    height: 250px;
+    @media (max-width: $mobile-width) {
+      height: 250px;
+    }
   }
 }
 

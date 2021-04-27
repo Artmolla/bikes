@@ -9,6 +9,20 @@
   @media (max-width: $mobile-width) {
     padding: 15px 0 40px 0;
   }
+
+  h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+    margin-bottom: 50px;
+
+    @media (max-width: $tablet-width) {
+      font-size: 24px;
+      line-height: 41px;
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .about__container {
@@ -16,19 +30,5 @@
 
   @media (max-width: $tablet-width) {
     max-width: 590px;
-  }
-}
-
-.about h2 {
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: -0.005em;
-  margin-bottom: 50px;
-
-  @media (max-width: $tablet-width) {
-    font-size: 24px;
-    line-height: 41px;
-    margin-bottom: 30px;
   }
 }

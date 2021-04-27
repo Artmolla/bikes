@@ -68,6 +68,40 @@
   @media (max-width: $mobile-width) {
     padding: 25px 3% 25px 3%;
   }
+
+  h1 {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 64px;
+    margin: 24px 0;
+
+    @media (max-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 42px;
+      text-align: center;
+      margin: 83px 0 2px 0;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin: 69px 0 2px 0;
+    }
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+
+    @media (max-width: $tablet-width) {
+      font-size: 18px;
+      padding: 0 20%;
+      text-align: center;
+    }
+
+    @media (max-width: $mobile-width) {
+      padding: 0;
+    }
+  }
 }
 
 .header__logo {
@@ -77,39 +111,5 @@
 
   @media (max-width: $mobile-width) {
     margin-left: 2.3%;
-  }
-}
-
-.header__intro h1 {
-  font-weight: 700;
-  font-size: 46px;
-  line-height: 64px;
-  margin: 24px 0;
-
-  @media (max-width: $tablet-width) {
-    font-size: 30px;
-    line-height: 42px;
-    text-align: center;
-    margin: 83px 0 2px 0;
-  }
-
-  @media (max-width: $mobile-width) {
-    margin: 69px 0 2px 0;
-  }
-}
-
-.header__intro p {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 32px;
-
-  @media (max-width: $tablet-width) {
-    font-size: 18px;
-    padding: 0 20%;
-    text-align: center;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding: 0;
   }
 }

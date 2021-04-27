@@ -8,6 +8,51 @@
   @media (max-width: $mobile-width) {
     padding: 0 0 27px 0;
   }
+
+  h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+
+    @media (max-width: $tablet-width) {
+      font-size: 24px;
+      margin: 0 0 20px 0;
+    }
+
+    @media (max-width: $mobile-width) {
+      font-size: 18px;
+    }
+  }
+
+  p {
+    font-style: normal;
+    font-size: 17px;
+    line-height: 31px;
+    padding: 0 20.3%;
+    margin-bottom: 40px;
+    color: $black-opacity;
+
+    @media (max-width: $tablet-width) {
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $mobile-width) {
+      padding: 0 7%;
+    }
+  }
+
+  a {
+    &:hover {
+      color: $aquamarine;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
 }
 
 .footer__container {
@@ -15,50 +60,5 @@
 
   @media (max-width: $tablet-width) {
     max-width: 698px;
-  }
-}
-
-.footer h2 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 30px;
-  margin-bottom: 30px;
-
-  @media (max-width: $tablet-width) {
-    font-size: 24px;
-    margin: 0 0 20px 0;
-  }
-
-  @media (max-width: $mobile-width) {
-    font-size: 18px;
-  }
-}
-
-.footer p {
-  font-style: normal;
-  font-size: 17px;
-  line-height: 31px;
-  padding: 0 20.3%;
-  margin-bottom: 40px;
-  color: $black-opacity;
-
-  @media (max-width: $tablet-width) {
-    padding: 0;
-    margin-bottom: 20px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding: 0 7%;
-  }
-}
-
-.footer a {
-  &:hover {
-    color: $aquamarine;
-  }
-
-  &:active {
-    opacity: 0.4;
   }
 }
