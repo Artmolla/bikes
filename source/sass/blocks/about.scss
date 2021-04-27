@@ -1,13 +1,21 @@
 .about {
   text-align: center;
-  padding: 126px 9.5% 130px 9.5%;
+  padding: 126px 0 130px 0;
 
   @media (max-width: $desktop-width) {
-    padding: 15px 11.7% 27px 11.7%;
+    padding: 15px 0 27px 0;
   }
 
   @media (max-width: $tablet-width) {
-    padding: 15px 3% 40px 3%;
+    padding: 15px 0 40px 0;
+  }
+}
+
+.about__container {
+  max-width: 1167px;
+
+  @media (max-width: $desktop-width) {
+    max-width: 590px;
   }
 }
 

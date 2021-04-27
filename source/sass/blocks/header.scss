@@ -1,8 +1,4 @@
 .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 256px 23%;
-  padding: 0 19.46% 221px 19.46%;
   color: $dark-white;
   background-color: $black;
   background-image: url("../img/backgrounds/bg-black-bike.jpg");
@@ -10,16 +6,9 @@
   background-position-x: center;
   background-repeat: no-repeat;
 
-  @media (max-width: 1350px) {
-    gap: 200px 8%;
-  }
-
   @media (max-width: $desktop-width) {
-    grid-template-columns: 1fr;
-    padding: 0;
     background-size: contain;
     background-position-y: -50px;
-    gap: 27px 0;
   }
 
   @media (max-width: 640px) {
@@ -38,8 +27,26 @@
     background-image: url("../img/backgrounds/bg-black-bike@2x.jpg");
   }
 
-  @media (min-resolution: 1.5dppx) and (max-width: $tablet-width) {
+  @media (min-resolution: 1.5dppx) and (max-width: 530px) {
     background-image: url("../img/backgrounds/bg-black-bike-mobile@2x.jpg");
+  }
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 256px 23.1%;
+  max-width: 880px;
+  padding: 0 0 221px 0;
+
+  @media (max-width: 1350px) {
+    gap: 200px 23.1%;
+  }
+
+  @media (max-width: $desktop-width) {
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: 27px 0;
   }
 }
 
