@@ -19,33 +19,33 @@
   <header class="header">
     <div class="header__container container">
       <nav class="menu menu--no-js">
-        <button class="menu__toggle menu__toggle--no-js button-reset" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+        <button class="menu__toggle menu__toggle--no-js" type="button">
+          <span>Открыть меню</span>
         </button>
-        <ul class="menu__list menu__list--no-js list-reset">
+        <ul class="menu__list menu__list--no-js">
           <li class="menu__item">
-            <a class="menu__action link-reset" href="#about">О нас
+            <a href="#about">О нас
               <svg class="menu__icon" width="12" height="8">
                 <use xlink:href="img/sprite.svg#icon-arrow"></use>
               </svg>
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__action link-reset" href="#bicycles-types">Виды велосипедов
+            <a href="#bicycles-types">Виды велосипедов
               <svg class="menu__icon" width="12" height="8">
                 <use xlink:href="img/sprite.svg#icon-arrow"></use>
               </svg>
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__action link-reset" href="#videos">Видео про велосипеды
+            <a href="#videos">Видео про велосипеды
               <svg class="menu__icon" width="12" height="8">
                 <use xlink:href="img/sprite.svg#icon-arrow"></use>
               </svg>
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__action link-reset" href="#contacts">Контакты
+            <a href="#contacts">Контакты
               <svg class="menu__icon" width="12" height="8">
                 <use xlink:href="img/sprite.svg#icon-arrow"></use>
               </svg>
@@ -66,12 +66,12 @@
         <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
         <form action="https://echo.htmlacademy.ru" method="POST">
           <div class="contact-form__container">
-            <label class="visually-hidden" for="user-name">Введите Ваше Имя</label>
+            <label for="user-name">Введите Ваше Имя</label>
             <input id="user-name" type="text" name="name" placeholder="Введите Ваше Имя"
               pattern="[A-Za-zА-Яа-яЁё]+(\s+[A-Za-zА-Яа-яЁё]+)?" required>
           </div>
           <div class="contact-form__container">
-            <label class="visually-hidden" for="user-phone">Введите Ваш номер телефона</label>
+            <label for="user-phone">Введите Ваш номер телефона</label>
             <input id="user-phone" type="tel" name="phone" placeholder="Введите Ваш номер телефона"
               pattern="^((\+7|7|8)+([0-9]){10})$" title="В формате +71234567890 либо 84456464641" required>
           </div>
@@ -86,7 +86,7 @@
     <section class="about" id="about">
       <div class="about__container container">
         <h2>Несколько фактов о нас</h2>
-        <ol class="facts list-reset">
+        <ol class="facts">
           <li class="facts__item">
             <span>01</span>
             <p>Самый широкий выбор велосипедов!</p>
@@ -109,9 +109,9 @@
     <section class="bicycles-types" id="bicycles-types">
       <div class="bicycles-types__container container">
         <h2>Виды велосипедов</h2>
-        <ul class="bicycles-types__list list-reset">
+        <ul class="bicycles-types__list">
           <li class="bicycles-types__item">
-            <a class="link-reset" href="#">
+            <a href="#">
               <figure class="bicycles-types__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 1023px)"
@@ -128,7 +128,7 @@
             </a>
           </li>
           <li class="bicycles-types__item">
-            <a class="link-reset" href="#">
+            <a href="#">
               <figure class="bicycles-types__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 1023px)"
@@ -145,7 +145,7 @@
             </a>
           </li>
           <li class="bicycles-types__item">
-            <a class="link-reset" href="#">
+            <a href="#">
               <figure class="bicycles-types__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 1023px)"
@@ -201,9 +201,9 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             title="Наш адрес на карте"></iframe>
         </div>
-        <ul class="contacts__list list-reset">
+        <ul class="contacts__list">
           <li class="contacts__item">
-            <a class="contacts__action link-reset" href="mailto:puteshestviemechta@gmail.ru">
+            <a href="mailto:puteshestviemechta@gmail.ru">
               <svg class="contacts__list__icon" width="26" height="20">
                 <use xlink:href="img/sprite.svg#icon-envelop"></use>
               </svg>
@@ -211,7 +211,7 @@
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__action link-reset" href="tel:+749978468446">
+            <a href="tel:+749978468446">
               <svg class="contacts__list__icon" width="22" height="24">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>

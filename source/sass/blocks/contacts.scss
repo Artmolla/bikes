@@ -47,8 +47,10 @@
 }
 
 .contacts__list {
-  @include flex;
+  @include list-reset;
 
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 0 10% 0 8%;
 
@@ -72,16 +74,18 @@
   @media (max-width: $mobile-width) {
     margin-bottom: 23px;
   }
-}
 
-.contacts__action {
-  @include flex;
+  a {
+    @include link-reset;
 
-  align-items: center;
-  font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-style: normal;
 
-  @media (max-width: $mobile-width) {
-    justify-content: center;
+    @media (max-width: $mobile-width) {
+      justify-content: center;
+    }
   }
 }
 

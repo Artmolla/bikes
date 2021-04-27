@@ -69,8 +69,13 @@
 }
 
 .videos__button {
-  @include flex-center;
+  @include button-reset;
 
+  font-family: $main-font;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 65px;
   height: 65px;
   position: absolute;

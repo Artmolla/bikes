@@ -58,8 +58,8 @@
   }
 
   @media (max-width: $tablet-width) {
-    @include flex;
-
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     padding: 25px 2.9% 35px 2.9%;

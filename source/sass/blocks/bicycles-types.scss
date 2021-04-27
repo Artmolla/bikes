@@ -39,8 +39,10 @@
 }
 
 .bicycles-types__list {
-  @include flex;
+  @include list-reset;
 
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -160,6 +162,10 @@
   @media (max-width: $mobile-width) {
     flex-basis: 100%;
     margin: 0 0 27px 0;
+  }
+
+  a {
+    @include link-reset;
   }
 }
 

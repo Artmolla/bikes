@@ -5,8 +5,8 @@
   line-height: 28px;
 
   @media (max-width: $tablet-width) {
-    @include flex;
-
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     padding: 67px 21px 35px 21px;
@@ -111,5 +111,9 @@
 
   @media (max-width: $mobile-width) {
     min-width: unset;
+  }
+
+  label {
+    @include visually-hidden;
   }
 }

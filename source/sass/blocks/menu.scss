@@ -11,8 +11,10 @@
 }
 
 .menu__list {
-  @include flex;
+  @include list-reset;
 
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 21px 2.39% 8px 2.39%;
   font-weight: 300;
@@ -32,6 +34,9 @@
 }
 
 .menu__toggle {
+  @include button-reset;
+
+  font-family: $main-font;
   display: none;
   position: absolute;
   top: 0;
@@ -48,6 +53,10 @@
   @media (max-width: $tablet-width) {
     display: flex;
   }
+
+  span {
+    @include visually-hidden;
+  }
 }
 
 .menu__item {
@@ -55,23 +64,25 @@
     margin-bottom: 30px;
     background-color: $light-white;
   }
-}
 
-.menu__action {
-  &:hover {
-    color: $aquamarine;
-  }
+  a {
+    @include link-reset;
 
-  &:active {
-    opacity: 0.4;
-  }
+    &:hover {
+      color: $aquamarine;
+    }
 
-  @media (max-width: $tablet-width) {
-    @include flex;
+    &:active {
+      opacity: 0.4;
+    }
 
-    justify-content: space-between;
-    align-items: center;
-    padding: 17px 16px;
+    @media (max-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 17px 16px;
+    }
   }
 }
 
@@ -94,7 +105,8 @@
 
 .menu__list--open {
   @media (max-width: $tablet-width) {
-    @include flex;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -119,6 +131,7 @@
 
 .menu__list--no-js {
   @media (max-width: $tablet-width) {
-    @include flex;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
