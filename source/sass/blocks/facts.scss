@@ -1,21 +1,23 @@
 .facts {
   @include list-reset;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.facts__item {
-  flex-basis: 22.54%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3.5%;
 
   @media (max-width: $tablet-width) {
-    flex-basis: 50%;
-    margin-bottom: 22px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
   }
 
   @media (max-width: $mobile-width) {
-    flex-basis: 100%;
+    grid-template-columns: 1fr;
+  }
+}
+
+.facts__item {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 23px;
   }
 
   span {
@@ -24,6 +26,10 @@
     line-height: 38px;
     letter-spacing: -1.27273px;
     color: $aquamarine;
+
+    @media (max-width: $mobile-width) {
+      line-height: 37px;
+    }
   }
 
   p {
